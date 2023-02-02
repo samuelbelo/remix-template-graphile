@@ -1,0 +1,14 @@
+.env
+node_modules
+dist
+/heroku-setup
+/yarn-error.log
+/@app/e2e/cypress/videos
+/@app/e2e/cypress/screenshots
+/@app/graphql/index.*
+.agignore
+*.tsbuildinfo
+.ethereal
+yarn-error.log
+
+**/.DS_Store

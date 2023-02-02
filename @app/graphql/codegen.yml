@@ -1,0 +1,22 @@
+overwrite: true
+schema: "../../data/schema.graphql"
+documents: "../client/app/**/*.graphql"
+config:
+  avoidOptionals:
+    field: true
+    inputValue: false
+    object: false
+  scalars:
+    Datetime: "string"
+    JSON: "{ [key: string]: any }"
+  noGraphQLTag: false
+  withHOC: false
+  withComponent: false
+  withHooks: true
+  reactApolloVersion: 3
+generates:
+  index.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-graphql-request"
